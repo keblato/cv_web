@@ -15,3 +15,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+$('#nav li').click(function(){
+  $(this).addClass('active').siblings().removeClass('active');
+})
