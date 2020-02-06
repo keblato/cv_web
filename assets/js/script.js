@@ -1,3 +1,5 @@
+//navbar scroll https://www.w3schools.com/howto/howto_js_sticky_header.asp
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -16,6 +18,7 @@ function myFunction() {
   }
 }
 
+//https://stackoverflow.com/questions/16856287/set-link-of-my-navbar-active-with-bootstrap  
 $('#nav li').click(function(){
   $(this).addClass('active').siblings().removeClass('active');
 })
