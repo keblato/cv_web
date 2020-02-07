@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Kevin Blanco</title>
 
@@ -27,7 +28,8 @@
 		<div class="collapse navbar-collapse col-6 col-md-10" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto" id="nav">
 				<li class="nav-item active">
-					<a class="nav-link" href="#me">Me <span class="sr-only">(current)</span></a>
+					<!-- Utilizar targets en los enlaces para que se abran en una nueva página. -->
+					<a class="nav-link" href="#me" target="blank">Me <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#experience">Experience</a>
@@ -57,36 +59,38 @@
 	<article class="resume-wrapper text-center position-relative">
 		<div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg row">
 			<header class="resume-header pt-4 pt-md-0 col-12 col-sm-12 col-md-12 col-lg-12" id="me">
-				
-					<div class="row media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
-						<div class="primary-info col-12 col-sm-12 col-md-12 col-lg-4 p-4 ">
-							<img class="mr-3 img-fluid picture mx-auto" src="assets/images/profile.jpg" alt="">
-							<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Kevin Blanco</h1>
-							<div class="title mb-3">Systems Engineer</div>
-							<ul class="list-unstyled">
-								<li class="mb-2"><a href="#"><i class="far fa-envelope fa-fw mr-2"
-											data-fa-transform="grow-3"></i>ks.blanco@uniandes.edu.co</a></li>
-								<li><a href="#"><i class="fas fa-mobile-alt fa-fw mr-2"
-											data-fa-transform="grow-6"></i>0123 456 78900</a></li>
-							</ul>
 
-						</div>
-						<!--//primary-info-->
-						<div class="col-12 col-sm-12 col-md-12 col-lg-8 p-4 bg-light">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 ">About Me</h2>
-							<div class="resume-section-content">
-								<p class="mb-0">Hello, I am a student of Systems Engineering at the Universidad de los
-									Andes;
-									Already i am in seventh semester. I love to program and learn new technologies or
-									just
-									learn something useful. I am a lover of the series, movies and documentaries,
-									I also always read the news of the day.
-									Today I am striving to have enough skills to enter in a great company.</p>
-							</div>
+				<div class="row media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+					<div class="primary-info col-12 col-sm-12 col-md-12 col-lg-4 p-4 text-center ">
+						<img class="mr-3 img-fluid picture mx-auto" src="assets/images/profile.jpg" alt="">
+						<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Kevin Blanco</h1>
+						<div class="title mb-3">Systems Engineer</div>
+						<ul class="list-unstyled">
+							<!-- Quitar los underline de los enlaces -->
+							<li class="mb-2"><a href="#"><i class="far fa-envelope fa-fw mr-2"
+										data-fa-transform="grow-3"></i>ks.blanco@uniandes.edu.co</a></li>
+							<li><a href="#"><i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>0123
+									456 78900</a></li>
+						</ul>
+
+					</div>
+					<!--//primary-info-->
+					<div class="col-12 col-sm-12 col-md-12 col-lg-8 p-4 bg-light">
+						<!-- Centrar el título sería bueno  -->
+						<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 text-center">About Me</h2>
+						<div class="resume-section-content">
+							<p class="mb-0">Hello, I am a student of Systems Engineering at the Universidad de los
+								Andes;
+								Already i am in seventh semester. I love to program and learn new technologies or
+								just
+								learn something useful. I am a lover of the series, movies and documentaries,
+								I also always read the news of the day.
+								Today I am striving to have enough skills to enter in a great company.</p>
 						</div>
 					</div>
-					<!--//media-body-->
-				
+				</div>
+				<!--//media-body-->
+
 				<!--//media-->
 			</header>
 			<div class="resume-body p-5 col-12 col-sm-12 col-md-12 col-lg-12">
@@ -358,17 +362,19 @@
 		<!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
 		<small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
 				target="_blank">Xiaoying Riley</a> for developers</small>
-				<div>
-					<audio controls autoplay>
-						
-						<source src="assets/song.mp3" type="audio/mpeg">
-						Your browser does not support the audio element.
-					  </audio>
-					  <video autoplay muted loop id="myVideo">
-						<source src="assets/video.mp4" type="video/mp4">
-						Your browser does not support HTML5 video.
-					  </video>
-				</div>
+
+	    <!-- Crear un container en este div y utlizar flex para centrar los elementos, el audio debería quedar abajo del vídeo. -->
+		<div>
+			<audio controls autoplay>
+
+				<source src="assets/song.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			<video autoplay muted loop id="myVideo">
+				<source src="assets/video.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
 	</footer>
 
 
